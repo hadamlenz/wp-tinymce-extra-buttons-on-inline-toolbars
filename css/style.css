@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+.mce-i-embed_sideByside:before, .mce-i-embed_stacked:before {
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 16px/1 'dashicons';
+    vertical-align: top;
+}
+
+.mce-i-embed_sideByside:before{
+	content: "\f135";
+	
+}
+
+.mce-i-embed_stacked:before {
+	content: "\f134";
+}

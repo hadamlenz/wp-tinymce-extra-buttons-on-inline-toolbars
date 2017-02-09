@@ -10,6 +10,7 @@ jQuery( document ).on( 'tinymce-editor-init', function( event, editor ) {
 			if( editor.dom.hasClass( node, 'wpview' ) && viewType === 'embed' ){
 				console.log(node);
 				console.log(viewType);
+				//this is where you add code to do something
 			}
 		}
 	});
@@ -23,6 +24,7 @@ jQuery( document ).on( 'tinymce-editor-init', function( event, editor ) {
 			if(editor.dom.hasClass( node, 'wpview' ) && viewType === 'embed' ){
 				console.log(node);
 				console.log(viewType);
+				//this is where you add code to do something
 			}
 		}
 	});

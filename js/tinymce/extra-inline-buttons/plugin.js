@@ -1,6 +1,7 @@
 // JavaScript Document
 jQuery( document ).on( 'tinymce-editor-init', function( event, editor ) {
-	var wpview = editor.plugins.wpview;
+	//add your buttons here
+	
 	editor.addButton('embed_stacked', {
 		title: 'Stacked Embed Layout',
 		classes: 'embed_stacked',
@@ -28,6 +29,10 @@ jQuery( document ).on( 'tinymce-editor-init', function( event, editor ) {
 			}
 		}
 	});
+	
+	//end adding buttons
+	
+	//this captures the two buttons that are there and adds the two new buttons from above
 	if (editor.wp && editor.wp._createToolbar) {
 		var toolbar = editor.wp._createToolbar([
 			'wp_view_edit',
@@ -36,7 +41,10 @@ jQuery( document ).on( 'tinymce-editor-init', function( event, editor ) {
 			'embed_stacked'
 		]);
 	}
+	
+	
 	if (toolbar) {
+		//this creates the toolbar, unsure if it over writes the old one
 		editor.on('wptoolbar', function (event) {
 			if (editor.dom.hasClass(event.element, 'wpview')) {
 				event.toolbar = toolbar;

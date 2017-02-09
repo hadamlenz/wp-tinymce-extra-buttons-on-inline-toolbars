@@ -1,7 +1,7 @@
 <?php
 /*
   Plugin Name: Extra Buttons on TinyMCE Toolbars
-  Plugin URI: soon
+  Plugin URI: https://github.com/hadamlenz/wp-tinymce-extra-buttons-on-inline-toolbars
   Description:  This is an example plugin to show how to add extra buttons on a toolbar in tinymce in the wordpress backend.  Do not use for production
   Author: H. Adam Lenz
   Version: 0.1

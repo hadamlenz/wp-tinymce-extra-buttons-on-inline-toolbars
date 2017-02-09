@@ -17,16 +17,6 @@ This is an example plugin to show how to add extra buttons on a toolbar in tinym
 1. Upload the plugin files to the `/wp-content/plugins/plugin-name` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
-== Frequently Asked Questions ==
-
-= WHY? =
-
-Because!!!
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
-
 == Screenshots ==
 
 1. `/assets/screenshot-1.jpg`

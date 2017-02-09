@@ -27,18 +27,18 @@ class Lenz_Tmce_Inline_Buttons{
 	
 	//attach the plugin js to the plugin array
 	public function add_tinymce_plugin($plugin_array) {
-		$plugin_array['extra_inline_buttons'] = plugins_url( '/js/tinymce/extra-inline-buttons/plugin.js', __FILE__ );
+		$plugin_array['extra_inline_buttons'] = plugins_url( '/js/tinymce/extra-inline-buttons/plugin.min.js', __FILE__ );
 		return $plugin_array;
 	}
 	
 	//add the button styles, this should work, but it doesn't, using the admin enqueue below
 	public function add_editor_styles(){
-		add_editor_style( plugins_url('/css/style.css', __FILE__ ));
+		add_editor_style( plugins_url('/css/style.min.css', __FILE__ ));
 	}
 	
 	//add the button styles
 	public function admin_scripts(){
-		wp_enqueue_style('embed', plugins_url('/css/style.css', __FILE__ ),array(), '0.1','screen' );
+		wp_enqueue_style('embed', plugins_url('/css/style.min.css', __FILE__ ),array(), '0.1','screen' );
 	}
 }
 
